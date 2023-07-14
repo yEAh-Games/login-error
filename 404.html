@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login tokens are deprecated | yEAh Accounts</title>
+    <link rel="icon" href="https://cdn.yeahgames.net/img/branding/logos/default/logo.svg">
+    <link rel="canonical" href="https://login.yeahgames.net">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0c0e14
+        }
+    </style>
+    <link rel="stylesheet" href="/static/output.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var mailLink = document.getElementById('mail-link');
+            var currentUrl = window.location.href;
+            var subject = 'Dead link to login token';
+            var body = 'URL: ' + currentUrl;
+            var mailtoLink = 'mailto:accounts+lt@yeahgames.net?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+            mailLink.setAttribute('href', mailtoLink);
+        });
+    </script>
+</head>
+
+<body>
+    <div style="background-color:#1d1f24" alt="Login tokens are deprecated"
+        class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        id="error" x-errorcode="410">
+        <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+            <path
+                d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L489.3 358.2l90.5-90.5c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114l-96 96-31.9-25C430.9 239.6 420.1 175.1 377 132c-52.2-52.3-134.5-56.2-191.3-11.7L38.8 5.1zM239 162c30.1-14.9 67.7-9.9 92.8 15.3c20 20 27.5 48.3 21.7 74.5L239 162zM406.6 416.4L220.9 270c-2.1 39.8 12.2 80.1 42.2 110c38.9 38.9 94.4 51 143.6 36.3zm-290-228.5L60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5l61.8-61.8-50.6-39.9z" />
+        </svg>
+        </svg>
+        <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Login tokens are
+                deprecated</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Effective <b style="color:white">July 14, 2023</b>,
+            login tokens have been retired and replaced with our new authentication system, yAuth. To proceed, <a
+                style="color:#ff7c7c" href="https://accounts.yeahgames.net/create">create an account</a> or <a
+                style="color:#ff7c7c" href="https://accounts.yeahgames.net/login">log in</a> and visit the site's direct
+            URL.</p>
+
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Notably, the Quotes library collection can now be
+            directly accessed at <a href="https://quotes.yeahgames.net" style="color:#ff7c7c">quotes.yeahgames.net</a>.
+            Please note that access to the Quotes library requires you to be logged in with an <a style="color:#ff7c7c"
+                href="https://quotes.yeahgames.net/authorize">authorized</a> yEAh account.</p>
+        <p class="mb-3 font-normal text-gray-500 dark:text-gray-400"> If you encounter any dead links leading to a login
+            token, please contact us by emailing <a style="color:#ff7c7c" id="mail-link">accounts+lt@yeahgames.net</a>.
+        </p>
+        <hr style="margin-top:10px;margin-bottom:8px" />
+        <a href="https://news.yeahgames.net/news/deprecating-login-tokens" style="color:#ff4747"
+            class="inline-flex items-center text-blue-600 hover:underline">
+            Learn more on News.
+            <svg class="w-3 h-3 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 18 18">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+            </svg>
+        </a>
+    </div>
+</body>
+
+</html>
